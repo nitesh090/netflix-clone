@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: black;
 }
 
 .main {
@@ -9,21 +16,134 @@
   background-position: center;
   background-size: max(1000px, 100vw);
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 70vh;
   position: relative;
 }
+
 .main .box {
   background-color: black;
   position: absolute;
   top: 0;
-  height: 80vh;
+  height: 70vh;
   width: 100%;
-  opacity: 0.44;
+  opacity: 0.62;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 80vw;
+  max-width: 60vw;
   margin-inline: auto;
+  height: 65px;
+}
+
+nav img {
+  height: 110px;
+  position: relative;
+  z-index: 10;
+
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  height: calc(100%-65px);
+  font-family: 'Martel Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 15px;
+  padding: 30px;
+}
+
+.hero> :nth-child(1) {
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.hero> :nth-child(2) {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.hero> :nth-child(3) {
+  font-size: 19px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.separation {
+  height: 10px;
+  background-color: rgb(44 42 42);
+}
+
+.btn {
+  padding: 3px 8px;
+  font-weight: 400;
+  color: white;
+  background: rgba(105, 103, 103, 0.049);
+  border: 1x solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 3px 24px;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: 375;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+}
+
+.hero-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.main input {
+  padding: 5px 58px 7px 24px;
+  color: white;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(246, 238, 238, 0.5);
+}
+.first{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80vw;
+  margin: auto;
+}
+.secImg{
+  position: relative;
+  left: 10vw;
+}
+.secImg img{
+  width: 40vw;
+  position: relative;
+  z-index: 10;
+}
+.secImg video{
+  position: absolute;
+  top: 51px;
+  left: 40px;
 }
